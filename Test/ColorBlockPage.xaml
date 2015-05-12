@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Test.ColorBlockPage">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout x:Name="pal" Padding="5"></StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>
