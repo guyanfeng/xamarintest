@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Test.TwoButtonPage">
+	<ContentPage.Content>
+		<StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Button x:Name="btnAdd" Text="Add" HorizontalOptions="CenterAndExpand" Clicked="OnButtonClicked">
+				</Button>
+				<Button x:Name="btnRemove" Text="Remove" IsEnabled="false" HorizontalOptions="CenterAndExpand" Clicked="OnButtonClicked">
+				</Button>
+			</StackLayout>
+			<ScrollView VerticalOptions="FillAndExpand">
+				<StackLayout x:Name="pal">
+				</StackLayout>
+			</ScrollView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

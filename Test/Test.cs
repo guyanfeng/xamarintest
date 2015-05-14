@@ -9,7 +9,7 @@ namespace Test
         public App()
         {
             // The root page of your application
-            MainPage = new ColorBlockPage();
+            MainPage = new XamlAndCode();
         }
 
         protected override void OnStart()
