@@ -9,7 +9,7 @@ namespace Test
         public App()
         {
             // The root page of your application
-            MainPage = new XamlAndCode();
+            MainPage = new XamlTimer();
         }
 
         protected override void OnStart()
