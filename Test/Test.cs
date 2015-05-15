@@ -8,8 +8,18 @@ namespace Test
     {
         public App()
         {
-            // The root page of your application
-            MainPage = new XamlTimer();
+            if (Properties.ContainsKey("ResultText"))
+            {
+                ResultText = Convert.ToString(Properties["ResultText"]);
+            }
+
+            MainPage = new XamlKeypad();
+        }
+
+        public string ResultText
+        {
+            get;
+            set;
         }
 
         protected override void OnStart()
@@ -19,7 +29,7 @@ namespace Test
 
         protected override void OnSleep()
         {
-            // Handle when your app sleeps
+            Properties["ResultText"] = ResultText;
         }
 
         protected override void OnResume()

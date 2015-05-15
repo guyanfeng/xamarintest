@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Test;assembly=Test" x:Class="Test.ColorViewList">
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout Padding="12,0">
+				<local:ColorView ColorName="Aqua" />
+				<local:ColorView ColorName="Black" />
+				<local:ColorView ColorName="Blue" />
+				<local:ColorView ColorName="Fuchsia" />
+				<local:ColorView ColorName="Gray" />
+				<local:ColorView ColorName="Green" />
+				<local:ColorView ColorName="Lime" />
+				<local:ColorView ColorName="Maroon" />
+				<local:ColorView ColorName="Navy" />
+				<local:ColorView ColorName="Olive" />
+				<local:ColorView ColorName="Purple" />
+				<local:ColorView ColorName="Pink" />
+				<local:ColorView ColorName="Red" />
+				<local:ColorView ColorName="Silver" />
+				<local:ColorView ColorName="Teal" />
+				<local:ColorView ColorName="White" />
+				<local:ColorView ColorName="Yellow" />
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

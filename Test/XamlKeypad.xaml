@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Test.XamlKeypad">
+	<ContentPage.Content>
+		<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+			<Label x:Name="lblResult" XAlign="End" Font="Large" TextColor="Fuchsia">
+			</Label>
+			<Button x:Name="btnBackspace" Text="⇦" IsEnabled="false" Clicked="OnBackspaceClicked">
+			</Button>
+			<StackLayout Orientation="Horizontal">
+				<Button Font="Large" Text="1" StyleId="1" Clicked="OnNumericClicked">
+				</Button>
+				<Button Font="Large" Text="2" StyleId="2" Clicked="OnNumericClicked">
+				</Button>
+				<Button Font="Large" Text="3" StyleId="3" Clicked="OnNumericClicked">
+				</Button>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Button Font="Large" Text="4" StyleId="4" Clicked="OnNumericClicked">
+				</Button>
+				<Button Font="Large" Text="5" StyleId="5" Clicked="OnNumericClicked">
+				</Button>
+				<Button Font="Large" Text="6" StyleId="6" Clicked="OnNumericClicked">
+				</Button>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal">
+				<Button Font="Large" Text="7" StyleId="7" Clicked="OnNumericClicked">
+				</Button>
+				<Button Font="Large" Text="8" StyleId="8" Clicked="OnNumericClicked">
+				</Button>
+				<Button Font="Large" Text="9" StyleId="9" Clicked="OnNumericClicked">
+				</Button>
+			</StackLayout>
+			<Button Font="Large" Text="0" StyleId="0" Clicked="OnNumericClicked">
+			</Button>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
