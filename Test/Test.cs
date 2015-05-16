@@ -13,7 +13,7 @@ namespace Test
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
 
-            MainPage = new XamlKeypad();
+            MainPage = new MonkeyTapWithSound();
         }
 
         public string ResultText

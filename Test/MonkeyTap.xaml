@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Test.MonkeyTap">
+	<ContentPage.Content>
+		<StackLayout>
+			<Button x:Name="btnStart" Text="Start" Clicked="OnStartClicked">
+			</Button>
+			<Label x:Name="lblScore" Text="得分：0" XAlign="Center" Font="Large" TextColor="Fuchsia">
+			</Label>
+			<BoxView x:Name="box1" VerticalOptions="FillAndExpand">
+				<BoxView.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnBoxViewTapped">
+					</TapGestureRecognizer>
+				</BoxView.GestureRecognizers>
+			</BoxView>
+			<BoxView x:Name="box2" VerticalOptions="FillAndExpand">
+				<BoxView.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnBoxViewTapped">
+					</TapGestureRecognizer>
+				</BoxView.GestureRecognizers>
+			</BoxView>
+			<BoxView x:Name="box3" VerticalOptions="FillAndExpand">
+				<BoxView.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnBoxViewTapped">
+					</TapGestureRecognizer>
+				</BoxView.GestureRecognizers>
+			</BoxView>
+			<BoxView x:Name="box4" VerticalOptions="FillAndExpand">
+				<BoxView.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnBoxViewTapped">
+					</TapGestureRecognizer>
+				</BoxView.GestureRecognizers>
+			</BoxView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
