@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:sys="clr-namespace:System;assembly=mscorlib" x:Class="Test.StaticSourcePage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<LayoutOptions x:Key="horzOptions">Center</LayoutOptions>
+			<LayoutOptions x:Key="vertOptions">Center</LayoutOptions>
+			<x:Double x:Key="borderWidth">3.14</x:Double>
+			<Color x:Key="textColor">#FF0000</Color>
+			<x:String x:Key="fontSize">Large</x:String>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout>
+			<Button Text="Border Width:π" BorderWidth="{x:Static sys:Math.PI}">
+				<Button.BackgroundColor>
+					<OnPlatform x:TypeArguments="Color" Android="#404040">
+					</OnPlatform>
+				</Button.BackgroundColor>
+				<Button.BorderColor>
+					<OnPlatform x:TypeArguments="Color" Android="White">
+					</OnPlatform>
+				</Button.BorderColor>
+			</Button>
+			<Label Text="{}{文本中包含括号}" XAlign="Center">
+			</Label>
+			<Button Text=" Do the other thing! " HorizontalOptions="{StaticResource horzOptions}" VerticalOptions="{StaticResource vertOptions}" BorderWidth="{StaticResource borderWidth}" TextColor="{StaticResource textColor}" FontSize="{StaticResource fontSize}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

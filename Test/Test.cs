@@ -1,6 +1,7 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Test
 {
@@ -13,7 +14,7 @@ namespace Test
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
 
-            MainPage = new MonkeyTapWithSound();
+            MainPage = new StaticSourcePage();
         }
 
         public string ResultText
@@ -24,7 +25,6 @@ namespace Test
 
         protected override void OnStart()
         {
-            // Handle when your app starts
         }
 
         protected override void OnSleep()
