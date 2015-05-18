@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Test;assembly=Test" x:Class="Test.CustomMarkupExtension">
+	<ContentPage.Content>
+		<StackLayout>
+			<BoxView Color="{local:HslColor H=0,S=1,L=0.5}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+			</BoxView>
+			<BoxView Color="{local:HslColor H=0.33,S=1,L=0.5}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+			</BoxView>
+			<BoxView Color="{local:HslColor H=0.67,S=1,L=0.5}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+			</BoxView>
+			<BoxView Color="{local:HslColor H=0,S=0,L=0.5}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+			</BoxView>
+			<BoxView Color="{local:HslColor H=0,S=0,L=1,A=0.5}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+			</BoxView>
+			<BoxView Color="{local:HslColor H=0,S=0,L=0,A=0.5}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+			</BoxView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
