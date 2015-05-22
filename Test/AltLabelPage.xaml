@@ -23,23 +23,23 @@
 				</local:AltLabel>
 			</StackLayout>
 			<StackLayout>
-				<Label Text="Text of 4 points" FontSize="4">
+				<Label Text="Text of 4 pixel" FontSize="4">
 				</Label>
-				<Label Text="Text of 5 points" FontSize="5">
+				<Label Text="Text of 5 pixel" FontSize="5">
 				</Label>
-				<Label Text="Text of 6 points" FontSize="6">
+				<Label Text="Text of 6 pixel" FontSize="6">
 				</Label>
-				<Label Text="Text of 7 points" FontSize="7">
+				<Label Text="Text of 7 pixel" FontSize="7">
 				</Label>
-				<Label Text="Text of 8 points" FontSize="8">
+				<Label Text="Text of 8 pixel" FontSize="8">
 				</Label>
-				<Label Text="Text of 9 points" FontSize="9">
+				<Label Text="Text of 9 pixel" FontSize="9">
 				</Label>
-				<Label Text="Text of 10 points" FontSize="10">
+				<Label Text="Text of 10 pixel" FontSize="10">
 				</Label>
-				<Label Text="Text of 11 points" FontSize="11">
+				<Label Text="Text of 11 pixel" FontSize="11">
 				</Label>
-				<Label Text="Text of 12 points" FontSize="12">
+				<Label Text="Text of 12 pixel" FontSize="12">
 				</Label>
 			</StackLayout>
 		</StackLayout>
