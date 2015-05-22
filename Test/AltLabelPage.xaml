@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Test;assembly=Test" x:Class="Test.AltLabelPage">
+	<ContentPage.Content>
+		<StackLayout Orientation="Horizontal">
+			<StackLayout>
+				<local:AltLabel Text="Text of 4 points" PointFontSize="4">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 5 points" PointFontSize="5">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 6 points" PointFontSize="6">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 7 points" PointFontSize="7">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 8 points" PointFontSize="8">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 9 points" PointFontSize="9">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 10 points" PointFontSize="10">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 11 points" PointFontSize="11">
+				</local:AltLabel>
+				<local:AltLabel Text="Text of 12 points" PointFontSize="12">
+				</local:AltLabel>
+			</StackLayout>
+			<StackLayout>
+				<Label Text="Text of 4 points" FontSize="4">
+				</Label>
+				<Label Text="Text of 5 points" FontSize="5">
+				</Label>
+				<Label Text="Text of 6 points" FontSize="6">
+				</Label>
+				<Label Text="Text of 7 points" FontSize="7">
+				</Label>
+				<Label Text="Text of 8 points" FontSize="8">
+				</Label>
+				<Label Text="Text of 9 points" FontSize="9">
+				</Label>
+				<Label Text="Text of 10 points" FontSize="10">
+				</Label>
+				<Label Text="Text of 11 points" FontSize="11">
+				</Label>
+				<Label Text="Text of 12 points" FontSize="12">
+				</Label>
+			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

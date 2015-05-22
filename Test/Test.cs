@@ -14,7 +14,7 @@ namespace Test
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
 
-            MainPage = new ClassHierarchyPage();
+            MainPage = new AltLabelPage();
         }
 
         public string ResultText
