@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test;assembly=Test"
+             x:Class="Test.WordCountPage">
+  <StackLayout>
+    <local:CountedLabel x:Name="lblText" Text="of the sort which
+is known as a &#x201C;Penang lawyer.&#x201D; Just
+under the head was a broad silver band" VerticalOptions="CenterAndExpand" FontSize="Large"></local:CountedLabel>
+    <local:CountedLabel x:Name="lblCounter" Text="???" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="Large">
+    </local:CountedLabel>
+  </StackLayout>
+</ContentPage>
