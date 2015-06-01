@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test;assembly=Test"
+             x:Class="Test.StyleInheritance">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="visualStyle" TargetType="VisualElement">
+        <Setter Property="BackgroundColor" Value="{local:HslColor H=0,S=1,L=0.8}"></Setter>
+      </Style>
+      <Style x:Key="baseStyle" TargetType="View" BasedOn="{StaticResource visualStyle}">
+        <Setter Property="HorizontalOptions" Value="Center"></Setter>
+        <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+      </Style>
+      <Style x:Key="labelStyle" TargetType="local:AltLabel" BasedOn="{StaticResource baseStyle}">
+        <Setter Property="TextColor" Value="Black"></Setter>
+        <Setter Property="PointFontSize" Value="12"></Setter>
+      </Style>
+      <Style x:Key="buttonStyle" TargetType="Button" BasedOn="{StaticResource baseStyle}">
+        <Setter Property="TextColor" Value="Blue"></Setter>
+        <Setter Property="FontSize" Value="Large"></Setter>
+        <Setter Property="BorderColor" Value="Red"></Setter>
+        <Setter Property="BorderWidth">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double"
+                        iOS="1"
+                        Android="2"
+                        WinPhone="3">
+            </OnPlatform>
+          </Setter.Value>
+        </Setter>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <!--设置 ContentPage 的 style 不能直接设置在 ContentPage 的attribute 节点上
+  因为xaml 的解析是自上而下的，应该设置在 ContentPage.Resources 下面-->
+  <ContentPage.Style>
+    <StaticResourceExtension Key="visualStyle" />
+  </ContentPage.Style>
+  <StackLayout>
+    <Button Text="Do this" Style="{StaticResource buttonStyle}"></Button>
+    <local:AltLabel Text="A bit of text" Style="{StaticResource labelStyle}"></local:AltLabel>
+    <Button Text="Do that" Style="{StaticResource buttonStyle}"></Button>
+    <local:AltLabel Text="Another a bit of text" Style="{StaticResource labelStyle}"></local:AltLabel>
+    <Button Text="Do the other things" Style="{StaticResource buttonStyle}"></Button>
+  </StackLayout>
+</ContentPage>

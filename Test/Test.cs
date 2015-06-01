@@ -14,7 +14,7 @@ namespace Test
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
 
-            MainPage = new WordCountPage();
+            MainPage = new StyleInheritance();
         }
 
         public string ResultText
