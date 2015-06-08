@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.DynamicStylePage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="basicStyle" TargetType="Button">
+        <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+        <Setter Property="Font" Value="Large"></Setter>
+      </Style>
+      <Style x:Key="buttonStyle1" TargetType="Button" BasedOn="{StaticResource basicStyle}">
+        <Setter Property="HorizontalOptions" Value="Center"></Setter>
+        <Setter Property="TextColor" Value="Red"></Setter>
+      </Style>
+      <Style x:Key="buttonStyle2" TargetType="Button" BasedOn="{StaticResource basicStyle}">
+        <Setter Property="HorizontalOptions" Value="Start"></Setter>
+        <Setter Property="TextColor" Value="Green"></Setter>
+      </Style>
+      <Style x:Key="buttonStyle3" TargetType="Button" BasedOn="{StaticResource basicStyle}">
+        <Setter Property="HorizontalOptions" Value="End"></Setter>
+        <Setter Property="TextColor" Value="Blue"></Setter>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout>
+    <Button x:Name="btn1" Text="Change To Style1" Clicked="OnBtn1Clicked" Style="{DynamicResource buttonStyle}"></Button>
+    <Button x:Name="btn2" Text="Change To Style2" Clicked="OnBtn2Clicked" Style="{DynamicResource buttonStyle}"></Button>
+    <Button x:Name="btn3" Text="Change To Style3" Clicked="OnBtn3Clicked" Style="{DynamicResource buttonStyle}"></Button>
+  </StackLayout>
+</ContentPage>

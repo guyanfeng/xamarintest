@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.ImplicitStyle">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <!--不填写 style 的key 属性，则该 style 会应用到所有继承自 TargetType 的实例中 -->
+      <Style TargetType="Button">
+        <Setter Property="HorizontalOptions" Value="Center"></Setter>
+        <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+        <Setter Property="BorderWidth" Value="3"></Setter>
+        <Setter Property="TextColor" Value="Red"></Setter>
+        <Setter Property="FontSize" Value="Large"></Setter>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout>
+    <Button Text="Do this"></Button>
+    <Button Text="Do that"></Button>
+    <Button Text="Do the other things"></Button>
+  </StackLayout>
+</ContentPage>

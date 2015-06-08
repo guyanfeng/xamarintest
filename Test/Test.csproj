@@ -30,14 +30,22 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CountedLabel.cs" />
+    <Compile Include="DynamicStylePage.xaml.cs">
+      <DependentUpon>DynamicStylePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImplicitStyle.xaml.cs">
+      <DependentUpon>ImplicitStyle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResourceSharing.xaml.cs">
       <DependentUpon>ResourceSharing.xaml</DependentUpon>
     </Compile>
     <Compile Include="StyleInheritance.xaml.cs">
       <DependentUpon>StyleInheritance.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourcePage.xaml.cs">
       <DependentUpon>ResourcePage.xaml</DependentUpon>
@@ -186,6 +194,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="StyleInheritance.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImplicitStyle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DynamicStylePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
