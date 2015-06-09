@@ -34,8 +34,14 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CountedLabel.cs" />
+    <Compile Include="DeviceStylesList.xaml.cs">
+      <DependentUpon>DeviceStylesList.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DynamicStylePage.xaml.cs">
       <DependentUpon>DynamicStylePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridLayoutPage.xaml.cs">
+      <DependentUpon>GridLayoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ImplicitStyle.xaml.cs">
       <DependentUpon>ImplicitStyle.xaml</DependentUpon>
@@ -58,6 +64,9 @@
     </Compile>
     <Compile Include="TwoButtonPage.xaml.cs">
       <DependentUpon>TwoButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WebBitmapPage.xaml.cs">
+      <DependentUpon>WebBitmapPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="WordCountPage.xaml.cs">
       <DependentUpon>WordCountPage.xaml</DependentUpon>
@@ -212,6 +221,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DynamicStylePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeviceStylesList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WebBitmapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridLayoutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

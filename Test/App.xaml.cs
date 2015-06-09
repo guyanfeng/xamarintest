@@ -18,7 +18,7 @@ namespace Test
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
 
-            MainPage = new DynamicStylePage();
+            MainPage = new GridLayoutPage();
         }
 
         public string ResultText

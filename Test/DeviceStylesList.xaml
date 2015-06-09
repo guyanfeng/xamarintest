@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.DeviceStylesList">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="newSubTitleStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="Accent"></Setter>
+        <Setter Property="FontAttributes" Value="Italic"></Setter>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <ScrollView>
+    <StackLayout Spacing="20">
+      <StackLayout>
+        <StackLayout HorizontalOptions="Start">
+          <Label Text="Device styles set with DynamicResource"></Label>
+          <BoxView Color="Accent" HeightRequest="3"></BoxView>
+        </StackLayout>
+        <Label Text="No Style whatsoever"></Label>
+        <Label Text="Body Style" Style="{DynamicResource BodyStyle}"></Label>
+        <Label Text="Title Style" Style="{DynamicResource TitleStyle}"></Label>
+        <Label Text="Subtitle Style" Style="{DynamicResource SubtitleStyle}"></Label>
+        <Label Text="New Subtitle Style" Style="{StaticResource newSubTitleStyle}"></Label>
+        <Label Text="Caption Style" Style="{DynamicResource CaptionStyle}"></Label>
+        <Label Text="List Item Text Style" Style="{DynamicResource ListItemTextStyle}"></Label>
+        <Label Text="List Item Detail Text Style" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+      </StackLayout>
+      <StackLayout x:Name="pal" HorizontalOptions="Start">
+        <StackLayout>
+          <Label Text="Device styles set in code"></Label>
+          <BoxView Color="Accent" HeightRequest="3"></BoxView>
+        </StackLayout>
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -26,5 +26,6 @@
     <Button x:Name="btn1" Text="Change To Style1" Clicked="OnBtn1Clicked" Style="{DynamicResource buttonStyle}"></Button>
     <Button x:Name="btn2" Text="Change To Style2" Clicked="OnBtn2Clicked" Style="{DynamicResource buttonStyle}"></Button>
     <Button x:Name="btn3" Text="Change To Style3" Clicked="OnBtn3Clicked" Style="{DynamicResource buttonStyle}"></Button>
+    <Button x:Name="btn4" Text="Reset" Clicked="OnBtn4Clicked" Style="{DynamicResource buttonStyle}"></Button>
   </StackLayout>
 </ContentPage>

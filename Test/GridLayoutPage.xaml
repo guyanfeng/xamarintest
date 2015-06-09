@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.GridLayoutPage">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <BoxView Grid.Row="0" Color="Red"></BoxView>
+    <BoxView Grid.Row="1" Color="Green"></BoxView>
+    <BoxView Grid.Row="2" Color="Blue"></BoxView>
+    <Button Text="This is a test" 
+            HorizontalOptions="Center" 
+            WidthRequest="100" 
+            HeightRequest="20"
+            Grid.Row="2"
+            ></Button>
+    <Button Text="Button2"
+        HorizontalOptions="Center"
+        WidthRequest="50"
+        HeightRequest="20"
+        Grid.Row="2"
+            ></Button>
+  </Grid>
+</ContentPage>

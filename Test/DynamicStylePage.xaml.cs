@@ -29,5 +29,10 @@ namespace Test
         {
             Resources["buttonStyle"] = Resources["buttonStyle3"];
         }
+
+        void OnBtn4Clicked(object sender, EventArgs e)
+        {
+            Resources["buttonStyle"] = null;
+        }
     }
 }
