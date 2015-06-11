@@ -17,8 +17,7 @@ namespace Test
             {
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
-
-            MainPage = new GridLayoutPage();
+            MainPage = new ResourceBitmapPage();
         }
 
         public string ResultText

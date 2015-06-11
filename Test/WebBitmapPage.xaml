@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Test.WebBitmapPage">
   <StackLayout>
-    <Image Source="http://developer.xamarin.com/demo/IMG_3256.JPG"></Image>
+    <!--<Image Source="http://img5.cache.netease.com/photo/0005/2015-06-10/AROBBJAO4TM10005.jpg"></Image>
+    <Image x:Name="img" BackgroundColor="Purple">
+      <Image.Source>
+        <UriImageSource Uri="http://img5.cache.netease.com/photo/0005/2015-06-10/AROBBJAO4TM10005.jpg"></UriImageSource>
+      </Image.Source>
+    </Image>-->
+    <Image x:Name="img" Source="http://img5.cache.netease.com/photo/0005/2015-06-10/AROBBJAO4TM10005.jpg"
+           Aspect="Fill"></Image>
   </StackLayout>
 </ContentPage>

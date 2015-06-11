@@ -14,5 +14,10 @@ namespace Test
         {
             InitializeComponent();
         }
+
+        void OnBtnClicked(object sender, EventArgs e)
+        {
+            //DisplayAlert("info", string.Format("w:{0},h:{1}", img.Width, img.Height), "OK");
+        }
     }
 }
