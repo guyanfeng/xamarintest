@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Test.ImageBrowserPage">
+  <StackLayout>
+    <Image x:Name="img" VerticalOptions="CenterAndExpand"
+           PropertyChanged="OnImagePropertyChanged"></Image>
+    <Label x:Name="lblFileName" HorizontalOptions="Center"></Label>
+    <ActivityIndicator x:Name="indicator"></ActivityIndicator>
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="btnPrevious" HorizontalOptions="CenterAndExpand"
+              IsEnabled="False" Clicked="OnPreviousClicked" Text="Previous"></Button>
+      <Button x:Name="btnNext" HorizontalOptions="CenterAndExpand"
+              IsEnabled="False" Clicked="OnNextClicked" Text="Next"></Button>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>
