@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.ImageTapPage">
+  <StackLayout>
+    <StackLayout.Resources>
+      <ResourceDictionary>
+        <Style TargetType="ContentView">
+          <Setter Property="BackgroundColor" Value="White"></Setter>
+          <Setter Property="HorizontalOptions" Value="Center"></Setter>
+          <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+        </Style>
+      </ResourceDictionary>
+    </StackLayout.Resources>
+    <ContentView>
+      <Image Source="Venus.jpg">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="OnImageTapped"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+    </ContentView>
+    <!--<ContentView>
+      <Image Source="Scream.jpg">
+        <Image.GestureRecognizers>
+          <TapGestureRecognizer Tapped="OnImageTapped"></TapGestureRecognizer>
+        </Image.GestureRecognizers>
+      </Image>
+    </ContentView>-->
+    <Label x:Name="lbl" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"></Label>
+  </StackLayout>
+</ContentPage>

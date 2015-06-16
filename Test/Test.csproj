@@ -34,6 +34,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="CountedLabel.cs" />
+    <Compile Include="DemoPage.xaml.cs">
+      <DependentUpon>DemoPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DeviceStylesList.xaml.cs">
       <DependentUpon>DeviceStylesList.xaml</DependentUpon>
     </Compile>
@@ -47,8 +50,14 @@
       <DependentUpon>GridLayoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ImageResourceExtension.cs" />
+    <Compile Include="ImageTapPage.xaml.cs">
+      <DependentUpon>ImageTapPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ImplicitStyle.xaml.cs">
       <DependentUpon>ImplicitStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlatformBitmapPage.xaml.cs">
+      <DependentUpon>PlatformBitmapPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResourceBitmapPage.xaml.cs">
       <DependentUpon>ResourceBitmapPage.xaml</DependentUpon>
@@ -267,6 +276,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="GetResourceList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PlatformBitmapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageTapPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DemoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

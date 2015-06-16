@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.DemoPage">
+  <StackLayout BackgroundColor="#EEE" Spacing="20">
+    <StackLayout.Resources>
+      <ResourceDictionary>
+        <Style x:Key="title" TargetType="Label">
+          <Setter Property="FontSize" Value="Large"></Setter>
+          <Setter Property="TextColor" Value="Black"></Setter>
+          <Setter Property="VerticalOptions" Value="Center"></Setter>
+          <Setter Property="HorizontalOptions" Value="StartAndExpand"></Setter>
+        </Style>
+        <Style x:Key="group" TargetType="Frame">
+          <Setter Property="OutlineColor" Value="#C0C0C0"></Setter>
+          <Setter Property="BackgroundColor" Value="White"></Setter>
+        </Style>
+        <Style x:Key="item" TargetType="StackLayout">
+          <Setter Property="Orientation" Value="Horizontal"></Setter>
+          <Setter Property="Spacing" Value="10"></Setter>
+        </Style>
+        <Style x:Key="icon" TargetType="Image">
+          <Setter Property="HorizontalOptions" Value="Start"></Setter>
+        </Style>
+        <Style x:Key="arrow" TargetType="Image">
+          <Setter Property="HorizontalOptions" Value="End"></Setter>
+        </Style>
+      </ResourceDictionary>
+    </StackLayout.Resources>
+    <Image Source="title.jpg"></Image>
+    <Frame Style="{StaticResource group}">
+      <StackLayout>
+        <StackLayout Style="{StaticResource item}">
+          <Image Source="t1.jpg" Style="{StaticResource icon}"></Image>
+          <Label Style="{StaticResource title}">我的账户</Label>
+          <Image Source="arrow.jpg" Style="{StaticResource arrow}"></Image>
+        </StackLayout>
+      </StackLayout>
+    </Frame>
+    <Frame Style="{StaticResource group}">
+      <StackLayout Spacing="10">
+        <StackLayout Style="{StaticResource item}">
+          <Image Source="t2.jpg" Style="{StaticResource icon}"></Image>
+          <Label Style="{StaticResource title}">我的铜板</Label>
+          <Image Source="arrow.jpg" Style="{StaticResource arrow}"></Image>
+        </StackLayout>
+        <BoxView HeightRequest="1" Color="#C9C9C9"></BoxView>
+        <StackLayout Orientation="Horizontal" Spacing="10">
+          <Image Source="t3.jpg" Style="{StaticResource icon}"></Image>
+          <Label Style="{StaticResource title}">邀请好友</Label>
+          <Image Source="arrow.jpg" Style="{StaticResource arrow}"></Image>
+        </StackLayout>
+      </StackLayout>
+    </Frame>
+  </StackLayout>
+</ContentPage>

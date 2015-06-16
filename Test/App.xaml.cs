@@ -17,7 +17,7 @@ namespace Test
             {
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
-            MainPage = new GetResourceList();
+            MainPage = new DemoPage();
         }
 
         public string ResultText
