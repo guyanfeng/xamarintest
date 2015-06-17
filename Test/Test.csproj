@@ -30,8 +30,14 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AbslouteLayoutPage.xaml.cs">
+      <DependentUpon>AbslouteLayoutPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChessboardFixedPage.xaml.cs">
+      <DependentUpon>ChessboardFixedPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="CountedLabel.cs" />
     <Compile Include="DemoPage.xaml.cs">
@@ -77,6 +83,9 @@
     </Compile>
     <Compile Include="ButtonClickPage.xaml.cs">
       <DependentUpon>ButtonClickPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolbarPage.xaml.cs">
+      <DependentUpon>ToolbarPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TwoButtonPage.xaml.cs">
       <DependentUpon>TwoButtonPage.xaml</DependentUpon>
@@ -294,6 +303,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DemoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolbarPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AbslouteLayoutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChessboardFixedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
