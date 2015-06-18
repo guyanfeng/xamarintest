@@ -36,6 +36,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CheckBoxView.xaml.cs">
+      <DependentUpon>CheckBoxView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ChessboardFixedPage.xaml.cs">
       <DependentUpon>ChessboardFixedPage.xaml</DependentUpon>
     </Compile>
@@ -62,6 +65,9 @@
     <Compile Include="ImplicitStyle.xaml.cs">
       <DependentUpon>ImplicitStyle.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OverlayPage.xaml.cs">
+      <DependentUpon>OverlayPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PlatformBitmapPage.xaml.cs">
       <DependentUpon>PlatformBitmapPage.xaml</DependentUpon>
     </Compile>
@@ -70,6 +76,9 @@
     </Compile>
     <Compile Include="ResourceSharing.xaml.cs">
       <DependentUpon>ResourceSharing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RgbSliderPage.xaml.cs">
+      <DependentUpon>RgbSliderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="StyleInheritance.xaml.cs">
       <DependentUpon>StyleInheritance.xaml</DependentUpon>
@@ -321,6 +330,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ChessboardFixedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OverlayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RgbSliderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CheckBoxView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

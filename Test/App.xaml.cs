@@ -17,7 +17,7 @@ namespace Test
             {
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
-            MainPage = new ChessboardFixedPage();
+            MainPage = new RgbSliderPage();
         }
 
         public string ResultText

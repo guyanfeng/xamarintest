@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.RgbSliderPage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style TargetType="Slider">
+        <Setter Property="Maximum" Value="255"></Setter>
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <StackLayout>
+    <Slider x:Name="sr" ValueChanged="OnSliderValueChanged"></Slider>
+    <Label x:Name="lr" Text="R = 0" HorizontalOptions="Center"></Label>
+    <Slider x:Name="sg" ValueChanged="OnSliderValueChanged"></Slider>
+    <Label x:Name="lg" Text="G = 0" HorizontalOptions="Center"></Label>
+    <Slider x:Name="sb" ValueChanged="OnSliderValueChanged"></Slider>
+    <Label x:Name="lb" Text="B = 0" HorizontalOptions="Center"></Label>
+    <BoxView x:Name="box" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    </BoxView>
+  </StackLayout>
+</ContentPage>

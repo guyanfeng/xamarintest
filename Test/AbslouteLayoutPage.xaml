@@ -8,8 +8,7 @@
     <BoxView Color="Accent"
              AbsoluteLayout.LayoutBounds="70, 50, 3, 70"></BoxView>
     <Label Style="{DynamicResource TitleStyle}"
-           AbsoluteLayout.LayoutBounds="80, 80, 200, 200"
-           BackgroundColor="Gray">
+           AbsoluteLayout.LayoutBounds="80, 80, -1, -1">
       <Label.Text>
         Stylish Header
       </Label.Text>
