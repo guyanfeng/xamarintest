@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.KeyboardTypePage">
+  <StackLayout>
+    <StackLayout.Resources>
+      <ResourceDictionary>
+        <Style TargetType="Entry">
+          <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+        </Style>
+      </ResourceDictionary>
+    </StackLayout.Resources>
+    <Entry Placeholder="Default"></Entry>
+    <Entry Placeholder="Text" Keyboard="Text"></Entry>
+    <Entry Placeholder="Numeric" Keyboard="Numeric"></Entry>
+    <Entry Placeholder="Chat" Keyboard="Chat"></Entry>
+    <Entry Placeholder="Email" Keyboard="Email"></Entry>
+    <Entry Placeholder="Telephone" Keyboard="Telephone"></Entry>
+    <Entry Placeholder="Url" Keyboard="Url"></Entry>
+  </StackLayout>
+</ContentPage>

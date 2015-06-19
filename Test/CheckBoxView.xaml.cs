@@ -29,13 +29,30 @@ namespace Test
             {
                 var box = (CheckBoxView)bindable;
                 box.lblBox.Text = newValue ? "\u2611" : "\u2610";
-
+                if (box.CheckChanged != null)
+                {
+                    box.CheckChanged(box, newValue);
+                }
             });
-        
-        public string Text { get; set; }
+
+        public event EventHandler<bool> CheckChanged;
+
+        public string Text
+        {
+            get{return (string)GetValue(TextProperty);}
+            set{SetValue(TextProperty, value);}
+        }
         [TypeConverter(typeof(FontSizeConverter))]
-        public double FontSize { get; set; }
-        public bool IsChecked { get; set; }
+        public double FontSize
+        {
+            get{return (double)GetValue(FontSizeProperty);}
+            set{SetValue(FontSizeProperty, value);}
+        }
+        public bool IsChecked
+        {
+            get{return (bool)GetValue(IsCheckedProperty);}
+            set{SetValue(IsCheckedProperty, value);}
+        }
         public CheckBoxView()
         {
             InitializeComponent();
@@ -43,7 +60,7 @@ namespace Test
 
         void OnCheckBoxTapped(object sender, EventArgs e)
         {
-            
+            IsChecked = !IsChecked;
         }
     }
 }

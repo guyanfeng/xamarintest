@@ -17,7 +17,7 @@ namespace Test
             {
                 ResultText = Convert.ToString(Properties["ResultText"]);
             }
-            MainPage = new RgbSliderPage();
+            MainPage = new BindingDemoPage();
         }
 
         public string ResultText

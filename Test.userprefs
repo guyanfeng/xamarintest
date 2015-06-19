@@ -1,16 +1,6 @@
 ﻿<Properties StartupItem="Droid\Test.Droid.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Test\WebBitmapPage.xaml.cs">
-    <Files>
-      <File FileName="Test\WebBitmapPage.xaml" Line="6" Column="28" />
-      <File FileName="Test\WebBitmapPage.xaml.cs" Line="16" Column="16" />
-      <File FileName="Test\App.xaml.cs" Line="1" Column="1" />
-      <File FileName="Test\ColorViewList.xaml" Line="1" Column="1" />
-      <File FileName="Test\ColorView.xaml" Line="1" Column="1" />
-      <File FileName="Test\DynamicSourcePage.xaml" Line="1" Column="1" />
-      <File FileName="Test\TheBlackCat.txt" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="E:\Project\xamarin\Test\Test\ColorViewList.xaml.cs" line="12" column="24" />
