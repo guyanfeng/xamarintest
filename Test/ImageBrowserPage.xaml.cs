@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Net;
+
+//using System.Net;
 using System.Runtime.Serialization;
 using Xamarin.Forms;
 
@@ -9,7 +10,7 @@ namespace Test
 {
     public partial class ImageBrowserPage : ContentPage
     {
-        WebRequest web_req;
+        /*WebRequest web_req;
         ImageList image_list;
         int image_index;
 
@@ -81,7 +82,6 @@ namespace Test
         {
             [DataMember(Name = "photos")]
             public List<string> Photos = null;
-        }
+        }*/
     }
 }
-

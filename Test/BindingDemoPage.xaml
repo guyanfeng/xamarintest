@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Test.BindingDemoPage">
-  <StackLayout BindingContext="{x:Reference web_view}">
-    <Entry Placeholder="Input Url" Keyboard="Url" Completed="OnEntryCompleted"></Entry>
-    <StackLayout Orientation="Horizontal">
-      <Button Text="Back" 
-              IsEnabled="{Binding CanGoBack}"
-              Clicked="OnBackClicked"></Button>
-      <Button Text="Forward" 
-              IsEnabled="{Binding CanGoForward}"
-              Clicked="OnForwardClicked"></Button>
-    </StackLayout>
-    <WebView x:Name="web_view" 
-             VerticalOptions="FillAndExpand"
-             Source="http://www.163.com"></WebView>
+             x:Class="Test.BindingDemoPage"
+             x:Name="page">
+  <StackLayout BindingContext="{x:Reference page}" Orientation="Horizontal">
+    <!--<Label BindingContext="{x:Reference slider}"
+           Text="{Binding Path=Value,StringFormat='The Slider Value is:{0:F3}'}"
+           Opacity="{Binding Path=Value}"
+           VerticalOptions="CenterAndExpand">
+    </Label>
+    <Slider x:Name="slider"
+            VerticalOptions="CenterAndExpand">
+    </Slider>-->
+    <Label Text="{Binding Path=Width}"></Label>
+    <Label Text=" &#x00D7; "></Label>
+    <Label Text="{Binding Path=Height}"></Label>
   </StackLayout>
 </ContentPage>

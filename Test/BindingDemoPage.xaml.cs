@@ -14,21 +14,5 @@ namespace Test
         {
             InitializeComponent();
         }
-
-        void OnEntryCompleted(object sender, EventArgs e)
-        {
-            var obj = (Entry)sender;
-            web_view.Source = obj.Text;
-        }
-
-        void OnBackClicked(object sender, EventArgs e)
-        {
-            web_view.GoBack();
-        }
-
-        void OnForwardClicked(object sender, EventArgs e)
-        {
-            web_view.GoForward();
-        }
     }
 }

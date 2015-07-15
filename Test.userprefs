@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="Droid\Test.Droid.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test\BindingDemoPage.xaml.cs">
+    <Files>
+      <File FileName="Test\BindingDemoPage.xaml.cs" Line="15" Column="35" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="E:\Project\xamarin\Test\Test\ColorViewList.xaml.cs" line="12" column="24" />
